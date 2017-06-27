@@ -237,19 +237,19 @@
             "osDiskSizeGB": "[variables(concat('deploymentSize-', parameters('CustomerSize'))).osDiskSizeGB]"
         },
         "deploymentSize-small": {
-            "vmSize": "Standard_DS1_v2",
+            "vmSize": "Standard_DS1",
             "osDiskSizeGB":250,
             "numberOfExtraServers": 0,
             "infrastructureTemplate": "[concat(variables('baseTemplateUri'), 'infra/infrastructure-small.json')]"
         },
         "deploymentSize-medium": {
-            "vmSize": "Standard_DS2_v2",
+            "vmSize": "Standard_DS2",
             "osDiskSizeGB":500,
             "numberOfExtraServers": 0,
             "infrastructureTemplate": "[concat(variables('baseTemplateUri'), 'infra/infrastructure-medium.json')]"
         },
         "deploymentSize-large": {
-            "vmSize": "Standard_DS4_v2",
+            "vmSize": "Standard_DS4",
             "osDiskSizeGB":1000,
             "numberOfExtraServers": 2,
             "infrastructureTemplate": "[concat(variables('baseTemplateUri'), 'infra/infrastructure-large.json')]"
